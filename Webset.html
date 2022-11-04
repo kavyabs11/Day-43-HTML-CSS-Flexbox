@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Website layout</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+        margin: 0;
+        text-align: center;
+        font-size: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .Whole-div {
+        display: flex;
+        flex-direction: column;
+        flex: 5;
+      }
+      .Art-foot-aside {
+        display: flex;
+        flex-direction: row;
+      }
+      .Art-foot {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex: 5;
+      }
+      .nav {
+        background-color: rgba(42, 165, 222, 0.637);
+        flex: 1;
+        padding: 0.5em;
+        text-align: left;
+      }
+      header,
+      footer {
+        padding: 0.5em;
+        background-color: rgb(64, 195, 64);
+        min-height: 20vh;
+      }
+      header {
+        font-family: sans-serif;
+        font-size: 50px;
+        color: rgb(26, 25, 25);
+        text-shadow: 2px 2px 8px pink;
+      }
+      article {
+        background-color: antiquewhite;
+        min-height: 60vh;
+        padding: 0.5em;
+      }
+      aside {
+        padding: 0.5em;
+        background-color: burlywood;
+        flex: 1;
+      }
+      p {
+        text-align: left;
+        font-size: 15px;
+      }
+      h3 {
+        color: crimson;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <h3>Navbar</h3>
+      <ui>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+      </ui>
+    </nav>
+    <div class="Whole-div">
+      <header>Header</header>
+      <div class="Art-foot-aside">
+        <div class="Art-foot">
+          <article>
+            <p>
+              Working together to keep the Tech Employability of Engineers alive
+              and accessible, so Tech Companies worldwide can get contributors
+              and creators for Technology Solutions. We believe this act of
+              human collaboration across an employability platform is essential
+              to individual growth and our collective future.
+            </p>
+            <h3>About</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequatur dolorem sed cum porro iste repellat enim incidunt
+              perspiciatis? Et, laboriosam cupiditate minima ab reprehenderit
+              optio sed veritatis doloribus ullam. Quae! Enim, quos fugit quia,
+              qui dolore iusto excepturi dolorem neque ad accusantium in laborum
+              unde animi inventore iste quaerat nulla cupiditate saepe! Dolore
+              praesentium incidunt ex distinctio architecto dignissimos
+              corporis. Labore quidem amet nesciunt quae facere error ab
+              reiciendis dolorem fugiat at asperiores voluptates fugit accusamus
+              delectus molestias porro dolores quia alias unde voluptate
+              repellendus, ipsam cumque in beatae! Expedita.
+            </p>
+          </article>
+          <footer>Be Synonymous With Employability</footer>
+        </div>
+        <aside>
+          <h3>Aside</h3>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
